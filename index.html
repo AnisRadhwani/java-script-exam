@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mojito Builder</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <body>
+
+    <!-- LOGIN PAGE -->
+    <div class="login-container" id="loginContainer">
+
+        <div class="login-box">
+
+            <h1>🍹 Mojito Builder</h1>
+
+            <p>Create your custom mojito</p>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter your name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <button id="loginBtn">
+                Start
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN WEBSITE -->
+    <div id="app" class="hidden">
+
+        <header>
+
+            <h1>🍹 Mojito Builder</h1>
+
+            <p id="welcomeText"></p>
+
+        </header>
+
+        <main>
+
+            <!-- FORM -->
+            <section class="form-section">
+
+                <div class="form-group">
+
+                    <label>Main Flavor</label>
+
+                    <select id="flavor">
+
+                        <option value="">
+                            Choose flavor
+                        </option>
+
+                        <option value="Mint">
+                            Mint
+                        </option>
+
+                        <option value="Lemon">
+                            Lemon
+                        </option>
+
+                        <option value="Strawberry">
+                            Strawberry
+                        </option>
+
+                        <option value="Watermelon">
+                            Watermelon
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Fruit</label>
+
+                    <select id="fruit">
+
+                        <option value="">
+                            Choose fruit
+                        </option>
+
+                        <option value="Kiwi">
+                            Kiwi
+                        </option>
+
+                        <option value="Mango">
+                            Mango
+                        </option>
+
+                        <option value="Pineapple">
+                            Pineapple
+                        </option>
+
+                        <option value="Apple">
+                            Apple
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Sugar Level</label>
+
+                    <select id="sugar">
+
+                        <option value="">
+                            Choose sugar
+                        </option>
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+                        <option value="High">
+                            High
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Ice Cubes</label>
+
+                    <input
+                        type="number"
+                        id="ice"
+                        min="0"
+                        max="10"
+                        value="2"
+                    >
+
+                </div>
+
+                <div class="buttons">
+
+                    <button id="createBtn">
+                        Create Mojito
+                    </button>
+
+                    <button id="randomBtn">
+                        Random Mojito
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- RESULT -->
+            <section class="result-section">
+
+                <h2>Your Mojito</h2>
+
+                <div id="result"></div>
+
+            </section>
+
+            <!-- FAVORITES -->
+            <section class="favorite-section">
+
+                <h2>Saved Mojitos</h2>
+
+                <div id="favorites"></div>
+
+            </section>
+
+            <!-- API -->
+            <section class="api-section">
+
+                <h2>Popular Mojitos From API</h2>
+
+                <button id="loadApi">
+                    Load Mojitos
+                </button>
+
+                <div id="apiResults"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</body>
+</html>
